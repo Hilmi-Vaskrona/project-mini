@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - Kedai Kopi Senja{% endblock %}
+
+{% block content %}
+    <div class="section">
+        <h1>Hubungi Kami</h1>
+        <p>Punya pertanyaan atau ingin memesan tempat? Silakan hubungi kami di bawah ini.</p>
+
+        <div class="contact-info">
+            <p><strong>Alamat:</strong> Jl. Melati No. 12, Jakarta</p>
+            <p><strong>Telepon / WA:</strong> 0812-3456-7890</p>
+            <p><strong>Email:</strong> halo@kopisenja.com</p>
+            <p><strong>Instagram:</strong> @kopisenja.id</p>
+        </div>
+
+        <h2>Kirim Pesan</h2>
+        <form class="contact-form" onsubmit="kirimPesan(event)">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Kedai Kopi Senja{% endblock %}
+
+{% block content %}
+    <div class="hero">
+        <h1>Selamat Datang di Kedai Kopi Senja</h1>
+        <p>Nikmati secangkir kopi pilihan dengan suasana yang nyaman dan hangat.</p>
+        <a href="/about" class="btn">Tentang Kami</a>
+    </div>
+
+    <div class="section">
+        <h2>Menu Favorit Kami</h2>
+        <div class="card-list">
+            <div class="card">
+                <h3>Kopi Susu Gula Aren</h3>
+                <p>Perpaduan espresso, susu segar, dan gula aren asli.</p>
+                <p class="price">Rp 18.000</p>
+            </div>
+            <div class="card">
+                <h3>Americano</h3>
+                <p>Kopi hitam segar dari biji kopi pilihan Nusantara.</p>
+                <p class="price">Rp 15.000</p>
+            </div>
+            <div class="card">
+                <h3>Matcha Latte</h3>
+                <p>Minuman teh hijau Jepang yang lembut dengan susu segar.</p>
+                <p class="price">Rp 20.000</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
